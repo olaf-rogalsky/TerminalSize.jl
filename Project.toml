@@ -1,0 +1,5 @@
+name = "TerminalSize"
+uuid = "1aa31eb5-e296-4ca2-a7a3-2b0134b3c95d"
+authors = ["Olaf Rogalsky <olaf.rogalsky@gmail.com>"]
+version = "0.1.0"
+
