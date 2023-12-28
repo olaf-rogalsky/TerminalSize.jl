@@ -11,7 +11,7 @@ get_terminal_size(raw_fd::Base.RawFD)::TermSize
 get_terminal_size(fd::Integer)::TermSize
 ```
 ## TermSize
-Structure, whhich holds the result.
+Structure, which holds the result.
 ```julia
 mutable struct TermSize
     row::UInt16                 # number of rows
