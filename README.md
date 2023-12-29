@@ -5,15 +5,15 @@ The library exports only two symbols:
 ## get_terminal_size
 Retrieves the size of the terminal from the tty device.
 ```julia
-get_terminal_size()::TermSize
-get_terminal_size(tty::Base.TTY)::TermSize
-get_terminal_size(raw_fd::Base.RawFD)::TermSize
-get_terminal_size(fd::Integer)::TermSize
+get_terminal_size()::WinSize
+get_terminal_size(tty::Base.TTY)::WinSize
+get_terminal_size(raw_fd::Base.RawFD)::WinSize
+get_terminal_size(fd::Integer)::WinSize
 ```
-## TermSize
+## WinSize
 Structure, which holds the result.
 ```julia
-mutable struct TermSize
+mutable struct WinSize
     row::UInt16                 # number of rows
     col::UInt16                 # number of columns
     xpixel::UInt16              # number of pixel in x-direction
